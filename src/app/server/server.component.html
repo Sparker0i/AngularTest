@@ -1,2 +1,4 @@
 <!-- [] = Binding to a property -->
-<h4 [ngStyle]="{backgroundColor: getColor()}">I'm a Server with ID {{ serverId }} and I'm {{ getServerStatus() }}</h4>
+<h4 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'Online'}">I'm a Server with ID {{ serverId }} and I'm {{ getServerStatus() }}</h4>
